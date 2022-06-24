@@ -11,15 +11,22 @@
 export default {
   data() {
     return {
-      userId: ''
-    }
+      userId: "",
+    };
   },
   methods: {
     onLoadUser() {
-      this.$router.push('/users/' + this.userId)
-    }
+      this.$router.push("/users/" + this.userId);
+    },
   },
-  layout: 'users'
-}
+  components: {
+    Header,
+  },
 
+  layout: "users",
+};
 </script>
+
+<style>
+
+</style>
